@@ -1,0 +1,148 @@
+import { NextResponse } from "next/server"
+
+const products = [
+  {
+    id: 1,
+    name: "Wireless Charger Pad",
+    price: 39.99,
+    image: "https://picsum.photos/id/1/800/800",
+    category: "Mobile Accessories",
+  },
+  {
+    id: 2,
+    name: "Phone Case",
+    price: 24.99,
+    image: "https://picsum.photos/id/2/800/800",
+    category: "Mobile Accessories",
+  },
+  {
+    id: 3,
+    name: "Bluetooth Earbuds",
+    price: 89.99,
+    image: "https://picsum.photos/id/3/800/800",
+    category: "Mobile Accessories",
+  },
+  {
+    id: 4,
+    name: "Portable Power Bank",
+    price: 49.99,
+    image: "https://picsum.photos/id/4/800/800",
+    category: "Mobile Accessories",
+  },
+  {
+    id: 5,
+    name: "Phone Ring Holder",
+    price: 14.99,
+    image: "https://picsum.photos/id/5/800/800",
+    category: "Mobile Accessories",
+  },
+  {
+    id: 6,
+    name: "Car Phone Mount",
+    price: 29.99,
+    image: "https://picsum.photos/id/6/800/800",
+    category: "Mobile Accessories",
+  },
+  {
+    id: 7,
+    name: "Screen Protector",
+    price: 12.99,
+    image: "https://picsum.photos/id/7/800/800",
+    category: "Mobile Accessories",
+  },
+  {
+    id: 8,
+    name: "USB-C Hub",
+    price: 59.99,
+    image: "https://picsum.photos/id/8/800/800",
+    category: "Mobile Accessories",
+  },
+  {
+    id: 9,
+    name: "Wireless Headphones",
+    price: 129.99,
+    image: "https://picsum.photos/id/9/800/800",
+    category: "Mobile Accessories",
+  },
+  {
+    id: 10,
+    name: "Phone Stand",
+    price: 19.99,
+    image: "https://picsum.photos/id/10/800/800",
+    category: "Mobile Accessories",
+  },
+  {
+    id: 11,
+    name: "Bluetooth Speaker",
+    price: 79.99,
+    image: "https://picsum.photos/id/11/800/800",
+    category: "Mobile Accessories",
+  },
+  {
+    id: 12,
+    name: "AirTag Holder",
+    price: 15.99,
+    image: "https://picsum.photos/id/12/800/800",
+    category: "Mobile Accessories",
+  },
+  {
+    id: 13,
+    name: "Charging Cable Set",
+    price: 24.99,
+    image: "https://picsum.photos/id/13/800/800",
+    category: "Mobile Accessories",
+  },
+  {
+    id: 14,
+    name: "Wireless Charging Stand",
+    price: 49.99,
+    image: "https://picsum.photos/id/14/800/800",
+    category: "Mobile Accessories",
+  },
+  {
+    id: 15,
+    name: "Phone Camera Lens Kit",
+    price: 69.99,
+    image: "https://picsum.photos/id/15/800/800",
+    category: "Mobile Accessories",
+  },
+  {
+    id: 16,
+    name: "Selfie Stick",
+    price: 34.99,
+    image: "https://picsum.photos/id/16/800/800",
+    category: "Mobile Accessories",
+  },
+  {
+    id: 17,
+    name: "Portable Charger",
+    price: 44.99,
+    image: "https://picsum.photos/id/17/800/800",
+    category: "Mobile Accessories",
+  },
+  {
+    id: 18,
+    name: "Phone Grip",
+    price: 9.99,
+    image: "https://picsum.photos/id/18/800/800",
+    category: "Mobile Accessories",
+  },
+  {
+    id: 19,
+    name: "Wireless Earbuds Case",
+    price: 29.99,
+    image: "https://picsum.photos/id/19/800/800",
+    category: "Mobile Accessories",
+  },
+  {
+    id: 20,
+    name: "Phone Cleaning Kit",
+    price: 19.99,
+    image: "https://picsum.photos/id/20/800/800",
+    category: "Mobile Accessories",
+  },
+]
+
+export async function GET() {
+  return NextResponse.json(products);
+}
